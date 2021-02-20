@@ -1,0 +1,23 @@
+{
+  "name": "libsodium",
+  "version": "1.0.18+2",
+  "description": "A modern, portable, easy to use crypto library. This PlatformIO package is unofficial / not maintained by the libsodium team.",
+  "keywords": "crypto, sodium, NaCl",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/jedisct1/libsodium"
+  },
+  "license": "ISC",
+  "homepage": "https://libsodium.org/",
+  "dependencies": [],
+  "frameworks": "*",
+  "platforms": "*",
+  "build":{
+    "includeDir": "src/libsodium/include",
+    "flags": [
+      "-Isrc/libsodium/include/sodium",
+      "-DCONFIGURED=1"
+    ]
+  }
+}
